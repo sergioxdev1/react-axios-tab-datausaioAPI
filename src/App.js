@@ -50,6 +50,12 @@ export default function App() {
           <TabPanel>{population}</TabPanel>
         ))}
       </Tabs>
+      <hr />
+      <ul>
+        {dataPopulation.sort().map((population) => (
+          <li>{population}</li>
+        ))}
+      </ul>
     </>
   );
 }
